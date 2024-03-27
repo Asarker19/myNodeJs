@@ -1,0 +1,11 @@
+Requirment: 
+1- Start an API server: we are maiking a API server, it will listen a port and incoming http request like: get, post, delete will accept.
+2- Create edit Delete user: The API will connect to a client and able to create a new user -- then it will allow user to Edit, delete the client
+3- Token based authentication: it will allow user to sign-in, the user no need enter user name and PW to access the API every time, we will create a token system. User can action sign-up without token.
+4- Logout Mechanism: Signed in user can logout anytime, and the authenticated token will be invalidadted. 
+5- Set link & up/down: User can chaek with web link is up or down, user can define what is up and down means to the user. 
+6- Edit/ Delete link and rate limit:  All usr to edit ot delete their link 
+7- Check up/down time: Will have a back-end service this will ping the user linkes to check if the linke are up or down, if the state change we will sms the user with the state.
+
+
+

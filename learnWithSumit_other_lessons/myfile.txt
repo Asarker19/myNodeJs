@@ -1,0 +1,15 @@
+How are you?This is Anup again.
+  if (req.url === "/") {
+    res.write("<html><head><title>Form</title></head>");
+    res.write(
+      '<body><form method="post" action="process"/><input name="message"/></form></body>'
+    );
+    res.end();
+  } else if (req.url === "/process" && req.method === "POST") {
+    req.on("data", (chunk) => {
+      console.log(chunk);
+    });
+  }; 
+});
+res.write('Thank you for submitting.');
+res.end();
